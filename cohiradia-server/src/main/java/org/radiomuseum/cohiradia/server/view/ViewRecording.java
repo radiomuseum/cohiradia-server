@@ -27,6 +27,7 @@ public class ViewRecording extends HttpServlet {
                                     
             <div class="container">
                    <h1>Cohiradia Recording: ##title##</h1>
+                   <p style="text-align:center"><img src="https://www.radiomuseum.org/img/cohiradia-logo.svg" style="width:40%;max-height:80px;"></p>
                    <a href="./">Overview of recordings...</a>
                    <h2>Recording Info</h2>
                    Center Frequency: ##center-frequency## kHz<br>

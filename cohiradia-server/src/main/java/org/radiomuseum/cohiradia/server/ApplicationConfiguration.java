@@ -25,13 +25,6 @@ public class ApplicationConfiguration {
     @ConfigProperty(name = "rmorg.storage.base", defaultValue = "./cohistore")
     File basePathStorage;
 
-    @Inject
-    @ConfigProperty(name = "rmorg.git.user")
-    String gitUserName;
-
-    @Inject
-    @ConfigProperty(name = "rmorg.git.password")
-    String gitPassword;
 
 
 }
