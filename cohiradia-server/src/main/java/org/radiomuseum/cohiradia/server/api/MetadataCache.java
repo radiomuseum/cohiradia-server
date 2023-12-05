@@ -8,8 +8,8 @@ import org.radiomuseum.cohiradia.meta.yaml.MetaData;
 import org.radiomuseum.cohiradia.meta.yaml.YamlRepository;
 import org.radiomuseum.cohiradia.server.ApplicationConfiguration;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;

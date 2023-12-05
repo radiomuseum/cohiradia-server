@@ -3,8 +3,8 @@ package org.radiomuseum.cohiradia.server.view;
 import org.radiomuseum.cohiradia.meta.yaml.MetaData;
 import org.radiomuseum.cohiradia.server.api.MetadataCache;
 
-import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
+import jakarta.enterprise.context.Dependent;
+import jakarta.inject.Inject;
 
 @Dependent
 public class PathUtil {

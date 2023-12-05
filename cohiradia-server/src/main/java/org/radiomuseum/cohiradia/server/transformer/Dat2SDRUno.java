@@ -10,8 +10,8 @@ import org.radiomuseum.cohiradia.meta.yaml.MetaData;
 import org.radiomuseum.cohiradia.meta.yaml.YamlRepository;
 import org.radiomuseum.cohiradia.server.ApplicationConfiguration;
 
-import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
+import jakarta.enterprise.context.Dependent;
+import jakarta.inject.Inject;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;

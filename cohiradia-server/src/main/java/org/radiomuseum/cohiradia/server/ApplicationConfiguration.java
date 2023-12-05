@@ -4,8 +4,8 @@ import lombok.Getter;
 import lombok.experimental.Accessors;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
+import jakarta.enterprise.context.Dependent;
+import jakarta.inject.Inject;
 import java.io.File;
 
 @Getter

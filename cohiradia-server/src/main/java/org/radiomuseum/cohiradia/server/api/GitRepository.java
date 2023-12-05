@@ -4,8 +4,8 @@ import lombok.SneakyThrows;
 import org.eclipse.jgit.api.Git;
 import org.radiomuseum.cohiradia.server.ApplicationConfiguration;
 
-import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
+import jakarta.enterprise.context.Dependent;
+import jakarta.inject.Inject;
 
 @Dependent
 public class GitRepository {

@@ -1,6 +1,6 @@
 package org.radiomuseum.cohiradia.server.servlet;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 public class Util {
 
