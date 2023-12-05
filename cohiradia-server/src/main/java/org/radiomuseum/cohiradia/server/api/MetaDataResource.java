@@ -1,13 +1,6 @@
 package org.radiomuseum.cohiradia.server.api;
 
 import io.quarkus.logging.Log;
-import org.apache.commons.io.FileUtils;
-import org.eclipse.microprofile.context.ManagedExecutor;
-import org.radiomuseum.cohiradia.meta.yaml.MetaData;
-import org.radiomuseum.cohiradia.meta.yaml.YamlRepository;
-import org.radiomuseum.cohiradia.server.ApplicationConfiguration;
-import org.radiomuseum.cohiradia.server.transformer.TransformerFacade;
-
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
@@ -16,6 +9,13 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.apache.commons.io.FileUtils;
+import org.eclipse.microprofile.context.ManagedExecutor;
+import org.radiomuseum.cohiradia.meta.yaml.MetaData;
+import org.radiomuseum.cohiradia.meta.yaml.YamlRepository;
+import org.radiomuseum.cohiradia.server.ApplicationConfiguration;
+import org.radiomuseum.cohiradia.server.transformer.TransformerFacade;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;

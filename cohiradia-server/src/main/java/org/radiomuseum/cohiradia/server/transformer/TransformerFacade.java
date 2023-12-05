@@ -1,10 +1,9 @@
 package org.radiomuseum.cohiradia.server.transformer;
 
 import io.quarkus.logging.Log;
-import org.radiomuseum.cohiradia.meta.yaml.MetaData;
-
 import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Inject;
+import org.radiomuseum.cohiradia.meta.yaml.MetaData;
 
 @Dependent
 public class TransformerFacade {

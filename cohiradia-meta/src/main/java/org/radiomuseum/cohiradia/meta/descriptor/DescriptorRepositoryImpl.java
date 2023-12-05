@@ -1,10 +1,10 @@
 package org.radiomuseum.cohiradia.meta.descriptor;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.enterprise.context.Dependent;
 import lombok.SneakyThrows;
 import org.radiomuseum.cohiradia.meta.utils.JacksonFactory;
 
-import jakarta.enterprise.context.Dependent;
 import java.io.File;
 import java.io.IOException;
 

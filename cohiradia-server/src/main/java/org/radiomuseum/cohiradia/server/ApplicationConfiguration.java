@@ -1,11 +1,11 @@
 package org.radiomuseum.cohiradia.server;
 
+import jakarta.enterprise.context.Dependent;
+import jakarta.inject.Inject;
 import lombok.Getter;
 import lombok.experimental.Accessors;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
-import jakarta.enterprise.context.Dependent;
-import jakarta.inject.Inject;
 import java.io.File;
 
 @Getter
@@ -24,7 +24,6 @@ public class ApplicationConfiguration {
     @Inject
     @ConfigProperty(name = "rmorg.storage.base", defaultValue = "./cohistore")
     File basePathStorage;
-
 
 
 }

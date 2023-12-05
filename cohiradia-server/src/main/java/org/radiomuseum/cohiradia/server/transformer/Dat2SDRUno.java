@@ -1,6 +1,8 @@
 package org.radiomuseum.cohiradia.server.transformer;
 
 import io.quarkus.logging.Log;
+import jakarta.enterprise.context.Dependent;
+import jakarta.inject.Inject;
 import org.radiomuseum.cohiradia.meta.dat.DatFilename;
 import org.radiomuseum.cohiradia.meta.descriptor.DescriptorRepository;
 import org.radiomuseum.cohiradia.meta.descriptor.RecordingDescriptor;
@@ -10,8 +12,6 @@ import org.radiomuseum.cohiradia.meta.yaml.MetaData;
 import org.radiomuseum.cohiradia.meta.yaml.YamlRepository;
 import org.radiomuseum.cohiradia.server.ApplicationConfiguration;
 
-import jakarta.enterprise.context.Dependent;
-import jakarta.inject.Inject;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;

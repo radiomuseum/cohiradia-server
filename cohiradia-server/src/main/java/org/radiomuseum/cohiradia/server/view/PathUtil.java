@@ -1,10 +1,9 @@
 package org.radiomuseum.cohiradia.server.view;
 
-import org.radiomuseum.cohiradia.meta.yaml.MetaData;
-import org.radiomuseum.cohiradia.server.api.MetadataCache;
-
 import jakarta.enterprise.context.Dependent;
 import jakarta.inject.Inject;
+import org.radiomuseum.cohiradia.meta.yaml.MetaData;
+import org.radiomuseum.cohiradia.server.api.MetadataCache;
 
 @Dependent
 public class PathUtil {

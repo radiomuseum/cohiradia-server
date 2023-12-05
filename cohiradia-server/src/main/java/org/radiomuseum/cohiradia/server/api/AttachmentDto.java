@@ -1,11 +1,10 @@
 package org.radiomuseum.cohiradia.server.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.Builder;
 import lombok.Data;
 import lombok.experimental.Accessors;
-
-import jakarta.xml.bind.annotation.XmlRootElement;
 
 @Builder
 @Data

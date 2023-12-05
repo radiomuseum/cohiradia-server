@@ -2,14 +2,14 @@ package org.radiomuseum.cohiradia.server.api;
 
 import io.quarkus.logging.Log;
 import io.quarkus.runtime.Startup;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import org.radiomuseum.cohiradia.meta.descriptor.DescriptorRepository;
 import org.radiomuseum.cohiradia.meta.descriptor.RecordingDescriptor;
 import org.radiomuseum.cohiradia.meta.yaml.MetaData;
 import org.radiomuseum.cohiradia.meta.yaml.YamlRepository;
 import org.radiomuseum.cohiradia.server.ApplicationConfiguration;
 
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;

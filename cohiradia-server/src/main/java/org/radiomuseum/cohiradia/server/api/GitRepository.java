@@ -1,11 +1,10 @@
 package org.radiomuseum.cohiradia.server.api;
 
+import jakarta.enterprise.context.Dependent;
+import jakarta.inject.Inject;
 import lombok.SneakyThrows;
 import org.eclipse.jgit.api.Git;
 import org.radiomuseum.cohiradia.server.ApplicationConfiguration;
-
-import jakarta.enterprise.context.Dependent;
-import jakarta.inject.Inject;
 
 @Dependent
 public class GitRepository {
