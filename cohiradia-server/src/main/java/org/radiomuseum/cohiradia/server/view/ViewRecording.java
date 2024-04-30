@@ -33,17 +33,17 @@ public class ViewRecording extends HttpServlet {
                    Center Frequency: ##center-frequency## kHz<br>
                    Sampling Rate: ##samples-per-sec## samples per second<br>
                    Start Date: ##start-date##<br>
-                   <h2>Download for RFCorder</h2>
-                   <ul>
-                     <li>##rfcorder-link##</li>
-                   </ul>
-                   <h2>Downloads for SDRuno / SDR#</h2>
+                   <h2>Downloads in IQ-wav-Format (for e.g. RFCorder V2.0 / COHIWizard / SDRUno / SDR# etc.)</h2>
                    <ul>
                    ##list##
                    </ul>
-                   <h2>Downloads for SDRuno / SDR# (Zipped)</h2>
+                   <h2>Downloads in IQ-wav-Format (for e.g. RFCorder V2.0 / COHIWizard / SDRUno / SDR# etc.) (Zipped)</h2>
                    <ul>
                      <li>##zipped##</li>
+                   </ul>
+                   <h2>Download for RFCorder</h2>
+                   <ul>
+                     <li>##rfcorder-link##</li>
                    </ul>
                    <hr>
                    <footer>powered by <a href="https://www.radiomuseum.org">radiomuseum.org</a>.</footer>
