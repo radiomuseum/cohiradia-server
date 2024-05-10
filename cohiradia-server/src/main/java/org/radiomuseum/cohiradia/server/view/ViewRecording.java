@@ -41,7 +41,7 @@ public class ViewRecording extends HttpServlet {
                    <ul>
                      <li>##zipped##</li>
                    </ul>
-                   <h2>Download for RFCorder</h2>
+                   <h2>Download for RFCorder v1.2</h2>
                    <ul>
                      <li>##rfcorder-link##</li>
                    </ul>
