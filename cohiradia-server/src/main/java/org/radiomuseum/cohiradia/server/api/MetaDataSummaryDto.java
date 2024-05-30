@@ -27,7 +27,13 @@ public class MetaDataSummaryDto {
     @JsonProperty(value = "country")
     String country;
 
+    @JsonProperty(value = "countryId")
+    int countryId;
+
     @JsonProperty(value = "id")
     int id;
+
+    @JsonProperty(value = "type")
+    String type;
 
 }

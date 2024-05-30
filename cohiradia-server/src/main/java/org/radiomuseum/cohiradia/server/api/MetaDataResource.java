@@ -162,6 +162,8 @@ public class MetaDataResource {
                 .content(metadata.getContent())
                 .band(metadata.getBand())
                 .country(metadata.getLocationCountry())
+                .countryId(metadata.getLocationCountryFk())
+                .type(metadata.getRecordingType())
                 .id(metadata.getId())
                 .city(metadata.getLocationCity()).build();
     }
