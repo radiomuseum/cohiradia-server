@@ -74,9 +74,15 @@ public class MetaData {
     private String preampSettings;
     @JsonProperty(value = "author")
     private String author;
+    @JsonProperty(value = "software")
+    private String software;
 
     @JsonIgnore
     public int getLocationCountryFk() {
+        if(getLocationCountry() == null){
+            return 0;
+        }
+
         return switch (getLocationCountry().toUpperCase()) {
             case "AT" -> 2;
             case "US" -> 3;

@@ -112,6 +112,7 @@ public class MetaDataResource {
     @GET
     @Path("/{id}")
     public Response getData(@PathParam("id") int id) {
+
         return cache.get(id)
                 .map(Response::ok)
                 .orElse(Response.serverError())
