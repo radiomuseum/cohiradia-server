@@ -50,17 +50,13 @@ public class MetaDataResource {
     @POST
     @Path("/pull")
     public Response pullGitRepository() {
-        if (gitRepository.pull()) {
-            return Response.ok().build();
-        } else {
-            return Response.serverError().build();
-        }
+        return gitRepository.pull() ? Response.ok().build() : Response.serverError().build();
     }
 
     @POST
     @Path("/reload")
     public Response reloadCache() {
-        cache.init();
+        cache.reload();
         return Response.ok().build();
     }
 
@@ -89,10 +85,9 @@ public class MetaDataResource {
         if (metaData.isEmpty()) {
             return Response.serverError().build();
         } else {
-            java.io.File originalPath = new File(config.basePathStorage(), metaData.get().getUri());
+            File originalPath = new File(config.basePathStorage(), metaData.get().getUri());
             if (originalPath.exists()) {
                 Log.infof("Original directory=[%s] exists.", originalPath.getAbsolutePath());
-
                 var target = new File(config.basePathDescriptor(), Integer.toString(id));
                 try {
                     Log.infof("Delete directory=[%s]", target.getAbsolutePath());

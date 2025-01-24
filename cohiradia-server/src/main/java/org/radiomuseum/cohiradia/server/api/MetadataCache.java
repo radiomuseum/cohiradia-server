@@ -55,6 +55,10 @@ public class MetadataCache {
         }
     }
 
+    public void reload(){
+        this.init();
+    }
+
     public RecordingDescriptor getDescriptor(int id) {
         return dataDirs.get(id);
     }

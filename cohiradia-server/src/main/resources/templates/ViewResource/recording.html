@@ -1,0 +1,38 @@
+{@org.radiomuseum.cohiradia.meta.descriptor.RecordingDescriptor descriptor}
+{@org.radiomuseum.cohiradia.meta.yaml.MetaData metadata}
+{@java.lang.String name}
+{@java.lang.String waveName}
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Cohiradia Recordings (Radiomuseum.org)</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Cohiradia Recording: {metadata.getContent()}</h1>
+    <p style="text-align:center"><img src="https://www.radiomuseum.org/img/cohiradia-logo.svg" style="width:40%;max-height:80px;"></p>
+    <a href="./">Overview of recordings...</a>
+    <h2>Recording Info</h2>
+    Center Frequency: {descriptor.centerFrequency()} kHz<br>
+    Sampling Rate: {descriptor.sampleRate()} samples per second<br>
+    Start Date: {descriptor.startDate()}<br>
+    <h2>Downloads in IQ-wav-Format (for e.g. RFCorder V2.0 / COHIWizard / SDRUno / SDR# etc.)</h2>
+    <ul>
+        {#for part in descriptor.parts()}
+        <li><a href="/files/wav/{name}?part={descriptor.parts().indexOf(part)}">{part.name()}</a> ({part.sizeAsGB()} GB)</li>
+        {/for}
+    </ul>
+    <h2>Downloads in IQ-wav-Format (for e.g. RFCorder V2.0 / COHIWizard / SDRUno / SDR# etc.) (Zipped)</h2>
+    <ul>
+        <li><a href="/files/wavzip/{name}?">{waveName}.zip</a> ({descriptor.sizeAsGB()} GB)</li>
+    </ul>
+    <h2>Download for RFCorder v1.2</h2>
+    <ul>
+        <li><a href="/files/dat/{name}">{waveName}.dat</a> ({descriptor.sizeAsGB()} GB)</li>
+    </ul>
+    <hr>
+    <footer>powered by <a href="https://www.radiomuseum.org">radiomuseum.org</a>.</footer>
+</div>
+</body>
+</html>

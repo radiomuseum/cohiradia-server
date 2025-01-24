@@ -14,11 +14,11 @@ import java.io.File;
 public class ApplicationConfiguration {
 
     @Inject
-    @ConfigProperty(name = "rmorg.meta.base", defaultValue = "./git/cohiradia-metadata/yaml")
+    @ConfigProperty(name = "rmorg.meta.base")
     File basePathMetadata;
 
     @Inject
-    @ConfigProperty(name = "rmorg.descriptor.base", defaultValue = "./git/cohiradia-metadata/yaml")
+    @ConfigProperty(name = "rmorg.descriptor.base")
     File basePathDescriptor;
 
     @Inject
