@@ -24,7 +24,6 @@ public class ViewRecording extends HttpServlet {
                   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css">
             </head>
             <body>
-                                    
             <div class="container">
                    <h1>Cohiradia Recording: ##title##</h1>
                    <p style="text-align:center"><img src="https://www.radiomuseum.org/img/cohiradia-logo.svg" style="width:40%;max-height:80px;"></p>

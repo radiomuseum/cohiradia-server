@@ -2,6 +2,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+cohiradia-server/src/main/resources/application-dev.properties
 
 ### IntelliJ IDEA ##
 .idea

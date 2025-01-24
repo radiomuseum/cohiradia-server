@@ -1,0 +1,21 @@
+{@java.util.List<org.radiomuseum.cohiradia.meta.descriptor.RecordingDescriptor> descriptors}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Cohiradia Recordings (Radiomuseum.org)</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Cohiradia Recordings</h1>
+    <ul>
+        {#for descriptor in descriptors}
+        <li><a href="/files/wav/?part=">{descriptor.name()}</a> ({descriptor.sizeAsGB()} GB)</li>
+        {/for}
+    </ul>
+    <hr>
+    <footer>powered by <a href="https://www.radiomuseum.org">radiomuseum.org</a>.</footer>
+</div>
+</body>
+</html>

@@ -20,12 +20,11 @@ public class ViewRecordingSimple extends HttpServlet {
             <!doctype html>
             <html>
             <head>
-                  <meta ‡charset="utf-8"/>
+                  <meta charset="utf-8"/>
                   <title>Cohiradia Recordings (Radiomuseum.org)</title>
                   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css">
             </head>
             <body>
-                                    
             <div class="container">
                    <h2>Download for RFCorder</h2>
                    <ul>

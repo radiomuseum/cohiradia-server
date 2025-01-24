@@ -25,6 +25,9 @@ public class RecordingPartDescriptor {
     @JsonProperty(value = "duration")
     private long duration;
 
+    @JsonProperty(value = "url")
+    private String url;
+
     public String sizeAsGB() {
         var format = NumberFormat.getNumberInstance();
         format.setMaximumFractionDigits(2);

@@ -22,7 +22,6 @@ public class ViewRecordings extends HttpServlet {
                   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css">
             </head>
             <body>
-                                    
             <div class="container">
                    <h1>Cohiradia Recordings</h1>
                    <ul>
