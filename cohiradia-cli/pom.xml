@@ -14,7 +14,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <quarkus.package.add-runner-suffix>true</quarkus.package.add-runner-suffix>
+        <quarkus.package.jar.add-runner-suffix>true</quarkus.package.jar.add-runner-suffix>
     </properties>
 
     <dependencies>
