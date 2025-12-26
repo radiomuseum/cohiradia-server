@@ -23,6 +23,7 @@ public class Main implements QuarkusApplication {
             SDRUnoMetaDataValidatorCommand.class,
             SDRUnoMetaDataUpdateCommand.class,
             SDRUnoDeleteNextFilenameCommand.class,
+            SDRUnoCleanupNextFilenameCommand.class,
             YAMLValidatorCommand.class,
             YAMLCreateCommand.class,
             YAMLIdWriterCommand.class,
